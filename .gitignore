@@ -1,5 +1,8 @@
 # API Keys and sensitive data
 config.json
+tsconfig.json
+package.json
+package-lock.json
 
 # Generated files
 generated-schedule.json

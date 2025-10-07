@@ -10,17 +10,31 @@
     "test": "npm run build && node dist/dayplanner-tests.js",
     "manual": "npm run build && node -e \"require('./dist/dayplanner-tests.js').testManualScheduling()\"",
     "llm": "npm run build && node -e \"require('./dist/dayplanner-tests.js').testLLMScheduling()\"",
-    "mixed": "npm run build && node -e \"require('./dist/dayplanner-tests.js').testMixedScheduling()\""
+    "mixed": "npm run build && node -e \"require('./dist/dayplanner-tests.js').testMixedScheduling()\"",
+    "exit-planner": "npm run build && node -e \"require('./dist/dynamic-exit-planner-tests.js').testManualScheduling()\"",
+    "exit-planner-llm": "npm run build && node -e \"require('./dist/dynamic-exit-planner-tests.js').testLLMScheduling()\"",
+    "exit-planner-mixed": "npm run build && node -e \"require('./dist/dynamic-exit-planner-tests.js').testMixedScheduling()\"",
+    "simple-exit-planner": "npm run build && node -e \"require('./dist/simple-exit-planner-tests.js').testManualScheduling()\"",
+    "simple-exit-planner-llm": "npm run build && node -e \"require('./dist/simple-exit-planner-tests.js').testLLMScheduling()\"",
+    "simple-exit-planner-mixed": "npm run build && node -e \"require('./dist/simple-exit-planner-tests.js').testMixedScheduling()\"",
+    "challenging-tests": "npm run build && node dist/challenging-test-cases.js"
   },
-  "keywords": ["gemini", "ai", "schedule", "student", "demo", "typescript"],
+  "keywords": [
+    "gemini",
+    "ai",
+    "schedule",
+    "student",
+    "demo",
+    "typescript"
+  ],
   "author": "Student Demo",
   "license": "MIT",
   "dependencies": {
     "@google/generative-ai": "^0.21.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^5.0.0",
-    "ts-node": "^10.9.0"
+    "@types/node": "^20.19.19",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
   }
 }
