@@ -4,4 +4,3 @@
 - [LLM Integration](gemini-llm.ts)
 - [Basic Tests](simple-exit-planner-tests.ts)
 - [Validation Summary](IMPLEMENTATION_SUMMARY.md)
-- [Config/Build](config.json), [package.json](package.json), [tsconfig.json](tsconfig.json), [.gitignore](.gitignore)
